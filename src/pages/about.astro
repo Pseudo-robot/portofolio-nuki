@@ -1,0 +1,50 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+---
+
+<Layout title="About">
+  <Header />
+
+  <main class="app-layout">
+    <h1 class="text-3xl font-bold mb-8">About</h1>
+
+    <div class="flex flex-col md:flex-row gap-8 items-start">
+
+      <img
+        src="/images/profile.jpeg"
+        alt="Nuki Aditya Pratama"
+        class="w-48 h-48 rounded-lg object-cover"
+      />
+
+      <div>
+        <p>Hi, I'm <strong>Nuki Aditya Pratama</strong>.</p>
+
+        <p class="mt-4">
+          I work with GIS related technologies and enjoy building WebGIS
+          applications and working with spatial data.
+        </p>
+
+        <p class="mt-4">My interests include:</p>
+
+        <ul class="list-disc ml-6 mt-2">
+          <li>Spatial data analysis</li>
+          <li>WebGIS development</li>
+          <li>OpenStreetMap data</li>
+        </ul>
+
+        <p class="mt-6">This website contains my:</p>
+
+        <ul class="list-disc ml-6 mt-2">
+          <li>Blog posts</li>
+          <li>GIS projects</li>
+          <li>Technical notes</li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
